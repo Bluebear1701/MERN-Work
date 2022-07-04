@@ -13,3 +13,13 @@ Graphql
 Mongodb
 Mongoose
 Heroku
+
+## Deployment 
+
+https://github.com/Bluebear1701/MERN-Work
+## Questions?
+### Please contact me:
+
+https://github.com/Bluebear1701
+
+https://www.linkedin.com/in/monica-solano-4b976122a/
