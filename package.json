@@ -12,8 +12,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bluebear1701/MERN-Work" 
+  },
+  "homepage": "https://github.com/Bluebear1701/MERN-Work/blob/main/README.md",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^7.2.2"
   }
- 
 }
