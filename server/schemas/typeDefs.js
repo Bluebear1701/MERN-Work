@@ -36,6 +36,6 @@ const typeDefs = gql`
     link: String!, description: String! ): User
     removeBook (bookId: ID): User
   }
-`;
+`
 
 module.exports = typeDefs;
