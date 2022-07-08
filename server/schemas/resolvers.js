@@ -39,15 +39,17 @@ const resolvers = {
     },
     saveBook: async (parent, book, context) => {
       if (context.user) {
+        console.log (book)
         const updateUser = await User.findOneAndUpdate(
           {
-            id: context.user._id
+            _id: context.user._id
           },
           {
             $addToSet: { savedBooks: book }
           },
           { new: true, runValidators: true }
         );
+        console.log (updateUser)
         return updateUser;
       }
       throw new AuthenticationError('Login needed!')
@@ -56,7 +58,7 @@ const resolvers = {
       if (context.user) {
         const updateUser = await User.findOneAndUpdate(
           {
-            id: context.user._id
+            _id: context.user._id
           },
           {
             $pull: { savedBooks: { bookId: bookId } }
